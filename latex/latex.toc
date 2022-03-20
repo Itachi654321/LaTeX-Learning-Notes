@@ -1,0 +1,96 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}写在学前}{5}{}%
+\contentsline {section}{\numberline {1.1}我的\LaTeX 资源}{5}{}%
+\contentsline {subsection}{\numberline {1.1.1}GoodNotes}{5}{}%
+\contentsline {subsection}{\numberline {1.1.2}Notability}{5}{}%
+\contentsline {subsection}{\numberline {1.1.3}百度网盘}{6}{}%
+\contentsline {subsection}{\numberline {1.1.4}知乎}{6}{}%
+\contentsline {subsection}{\numberline {1.1.5}网易公开课}{6}{}%
+\contentsline {subsection}{\numberline {1.1.6}bilibili}{6}{}%
+\contentsline {subsection}{\numberline {1.1.7}移动硬盘}{6}{}%
+\contentsline {subsection}{\numberline {1.1.8}XMind}{7}{}%
+\contentsline {subsection}{\numberline {1.1.9}网站}{7}{}%
+\contentsline {section}{\numberline {1.2}我的学习指南}{7}{}%
+\contentsline {section}{\numberline {1.3}问题、想法汇总}{7}{}%
+\contentsline {section}{\numberline {1.4}我的学习日常}{7}{}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}构建文档的基本过程}{8}{}%
+\contentsline {section}{\numberline {2.1}导言区}{8}{}%
+\contentsline {section}{\numberline {2.2}正文区}{8}{}%
+\contentsline {section}{\numberline {2.3}增加目录项目}{8}{}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}字体属性}{9}{}%
+\contentsline {section}{\numberline {3.1}字体族}{9}{}%
+\contentsline {section}{\numberline {3.2}字体系列}{9}{}%
+\contentsline {section}{\numberline {3.3}字体形状}{9}{}%
+\contentsline {section}{\numberline {3.4}字体大小}{9}{}%
+\contentsline {section}{\numberline {3.5}自定义引用字体}{9}{}%
+\contentsline {section}{\numberline {3.6}强调}{9}{}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}页面设置}{10}{}%
+\contentsline {section}{\numberline {4.1}长度单位}{10}{}%
+\contentsline {section}{\numberline {4.2}缩进}{10}{}%
+\contentsline {section}{\numberline {4.3}分段换行}{10}{}%
+\contentsline {section}{\numberline {4.4}段落对齐}{10}{}%
+\contentsline {section}{\numberline {4.5}清除空白页}{10}{}%
+\contentsline {section}{\numberline {4.6}页面尺寸}{11}{}%
+\contentsline {section}{\numberline {4.7}脚注}{11}{}%
+\contentsline {section}{\numberline {4.8}空行}{11}{}%
+\contentsline {section}{\numberline {4.9}行距}{11}{}%
+\contentsline {section}{\numberline {4.10}盒子}{11}{}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}文本环境}{12}{}%
+\contentsline {section}{\numberline {5.1}引用环境}{12}{}%
+\contentsline {section}{\numberline {5.2}摘要环境}{12}{}%
+\contentsline {section}{\numberline {5.3}列表环境}{12}{}%
+\contentsline {section}{\numberline {5.4}定理环境}{12}{}%
+\contentsline {section}{\numberline {5.5}抄录环境}{12}{}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}图表}{13}{}%
+\contentsline {section}{\numberline {6.1}图像}{13}{}%
+\contentsline {section}{\numberline {6.2}表格}{13}{}%
+\contentsline {section}{\numberline {6.3}标题}{13}{}%
+\contentsline {section}{\numberline {6.4}标签引用}{13}{}%
+\contentsline {section}{\numberline {6.5}浮动环境位置}{13}{}%
+\contentsline {section}{\numberline {6.6}不浮动的图表环境}{13}{}%
+\contentsline {section}{\numberline {6.7}改变图表标题格式}{14}{}%
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}符号}{15}{}%
+\contentsline {section}{\numberline {7.1}空白符号}{15}{}%
+\contentsline {section}{\numberline {7.2}控制符}{15}{}%
+\contentsline {section}{\numberline {7.3}希腊字母}{15}{}%
+\contentsline {section}{\numberline {7.4}标志符号}{15}{}%
+\contentsline {section}{\numberline {7.5}连字符}{15}{}%
+\contentsline {section}{\numberline {7.6}引号}{15}{}%
+\contentsline {section}{\numberline {7.7}省略号}{16}{}%
+\contentsline {section}{\numberline {7.8}排版符号}{16}{}%
+\contentsline {section}{\numberline {7.9}下划线}{16}{}%
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}数学公式}{17}{}%
+\contentsline {section}{\numberline {8.1}常用数学宏包}{17}{}%
+\contentsline {section}{\numberline {8.2}行内公式}{17}{}%
+\contentsline {section}{\numberline {8.3}行间公式}{17}{}%
+\contentsline {section}{\numberline {8.4}编号行间公式}{17}{}%
+\contentsline {section}{\numberline {8.5}非编号行间公式}{17}{}%
+\contentsline {section}{\numberline {8.6}对齐公式}{17}{}%
+\contentsline {section}{\numberline {8.7}上下标}{18}{}%
+\contentsline {section}{\numberline {8.8}根式}{18}{}%
+\contentsline {section}{\numberline {8.9}分式}{18}{}%
+\contentsline {section}{\numberline {8.10}算符}{18}{}%
+\contentsline {section}{\numberline {8.11}极限}{18}{}%
+\contentsline {section}{\numberline {8.12}角度}{18}{}%
+\contentsline {section}{\numberline {8.13}矩阵}{18}{}%
+\contentsline {section}{\numberline {8.14}关系符}{19}{}%
+\contentsline {section}{\numberline {8.15}箭头}{19}{}%
+\contentsline {section}{\numberline {8.16}括号和定界符}{19}{}%
+\contentsline {section}{\numberline {8.17}定理环境}{19}{}%
+\contentsline {section}{\numberline {8.18}自定义}{19}{}%
+\contentsline {section}{\numberline {8.19}证明环境}{19}{}%
+\contentsline {section}{\numberline {8.20}引用}{20}{}%
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}文献列表}{21}{}%
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}幻灯片}{22}{}%
+\contentsline {section}{\numberline {10.1}简介}{22}{}%
+\contentsline {section}{\numberline {10.2}目录小节}{22}{}%
+\contentsline {section}{\numberline {10.3}环境}{22}{}%
+\contentsline {subsection}{\numberline {10.3.1}区块环境}{22}{}%
+\contentsline {subsection}{\numberline {10.3.2}提醒环境}{22}{}%
+\contentsline {subsection}{\numberline {10.3.3}例子环境}{22}{}%
+\contentsline {subsection}{\numberline {10.3.4}证明环境}{22}{}%
+\contentsline {subsection}{\numberline {10.3.5}分栏环境}{23}{}%
+\contentsline {section}{\numberline {10.4}抄录环境}{23}{}%
+\contentsline {section}{\numberline {10.5}创建覆盖}{23}{}%
+\contentsline {section}{\numberline {10.6}主题}{23}{}%
+\contentsline {section}{\numberline {10.7}选用}{23}{}%
+\contentsline {section}{\numberline {10.8}定制}{23}{}%

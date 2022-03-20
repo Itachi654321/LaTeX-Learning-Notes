@@ -1,0 +1,507 @@
+%导言区
+\documentclass{book}%文章类型
+
+\usepackage[heading=true]{ctex}%中文宏包
+\usepackage{CJKfntef}%中文下划线宏包
+\usepackage{xltxtra}%XelaTeX标志符号
+\usepackage{amsmath}%数学公式
+\usepackage{graphicx}%图像
+\usepackage{titlesec}%标题格式
+\usepackage{fancyhdr}%添加页眉页脚
+\usepackage{fancyvrb}%抄录环境
+\usepackage{texnames}%标志符号
+\graphicspath{figures/}%图像路径
+\CTEXoptions[today=old]%日期格式
+\usepackage{ulem}
+\usepackage{amssymb}%数学宏包
+\usepackage{geometry}%页面设置
+\usepackage{makecell}%表格内换行
+\usepackage{alltt}%抄录环境
+\geometry{centering}%版心居中
+\geometry{top=2cm}%上边缘宽度
+\geometry{bottom=2cm}%下边缘距离
+\geometry{left=2cm}%左边缘距离
+\geometry{right=2cm}%右边缘距离
+
+%正文区
+\begin{document}
+
+	\setlength{\parindent}{0pt}%取消首行缩进
+	
+	\begin{titlepage}%自定义标题格式
+	\vspace*{\fill}
+	\begin{center}
+		\normalfont
+		{\huge\bfseries \LaTeX }
+		
+		\bigskip
+		{\Large\itshape Itachi酱\\木叶村暗部}
+		
+		\medskip
+		\today
+	\end{center}
+    \vspace{\stretch{3}}
+	\end{titlepage}
+
+    \thispagestyle{fancy}
+
+	\newpage%生成目录页
+	\let\cleardoublepage\clearpage%清除空白页	
+
+	\tableofcontents%输出目录	
+	
+	\chapter{写在学前}
+	
+	\section{我的\LaTeX 资源}
+	
+	\subsection{GoodNotes}
+	简单高效\LaTeX\\
+	一份（不太）简短的\LaTeX 介绍\\
+	A Practical Guide to \LaTeX\enspace Tips and Tricks\\
+	China\TeX 培训期刊\\
+	\CTeX 宏集手册\\
+	\LaTeX\enspace Beginner's Guide\\
+	\LaTeX\enspace Cookbook\\
+	\LaTeX\enspace Notes\\
+	\LaTeX 科技论文写作简明教程\\
+	\LaTeX 快速入门与提高\\
+	\LaTeX 排版学习笔记\\
+	\LaTeX 入门\\
+	\LaTeX 完全学习手册\\
+	\LaTeX 文类和宏包学习手册\\
+	Math mode\\
+	Mathematics into Type\\
+	More Math Into \LaTeX\\
+	Practical \LaTeX\\
+	\TeX\enspace for the Impatient\\
+	\TeX 主题演讲\\
+	The Art of \LaTeX\\
+	The BEAMER class\\
+	The \LaTeX\enspace Companion\\
+	The \LaTeX\enspace Mathematics Companion\\
+	
+	\subsection{Notability}
+	表格手册\\
+	绘图教程\\
+	介绍\\
+	索引\\
+	文献\\
+	中文使用手册\\
+	beamer\\
+	\CTeX\\
+	graphicx\\
+	mathematics\\
+	physics\\
+	
+	\subsection{百度网盘}
+	视频\\
+	书籍\\
+	资料\\
+	
+	\subsection{知乎}
+	LaTeX（未读）\\
+	LaTeX（已读）\\
+	
+	\subsection{网易公开课}
+	LaTeX(未看)\\
+	LaTeX(已看)\\
+	
+	
+	\subsection{bilibili}
+	LaTeX(未看)\\
+	LaTeX(已看)\\
+	
+	\subsection{移动硬盘}
+	\LaTeX 教程\\
+
+    \subsection{XMind}
+    
+    \subsection{网站}
+    CTAN\\
+    水木社区TEX版\\
+    LaTeX编辑部\\
+    Cambridge Notes\\
+    Creat LaTeX tables online\\
+    Slager\\
+    TEX.SE\\
+    GitHub\\
+    Jacky's site\\
+    Mathcha\\
+    
+	\section{我的学习指南}
+	学习笔记上传知乎。\\
+	学习\LaTeX ，可用于学习笔记、作业、论文写作、国赛、美赛。\\
+	在记笔记的过程中不断完善思维导图。\\
+	
+	\section{问题、想法汇总}
+	如何用Python编辑脚本编写LaTeX文档中重复的内容。\\
+	alltt环境不起作用。\\
+	verb抄录环境中如何换行。\\
+	如何用LaTeX设计版面和宏。\\
+	
+	\section{我的学习日常}
+	2022.3.3开始学习\LaTeX。\\
+	\begin{table}[h]
+		\begin{tabular}{|c|c|}
+			\hline
+			2022.3.3&学习LaTeX入门\\
+			\hline
+			2022.3.4&学习LaTeX入门、制作LaTeX思维导图、写知乎文章\\
+			\hline
+		\end{tabular}
+	\end{table}
+
+	\chapter{构建文档的基本过程}
+	基本介绍：LaTeX是国际上科技领域展业排版的实际标准。\\
+	
+	\section{导言区}
+	(1)声明文章类型：\\
+	\textbackslash documentclass \{文章类型:book，reporter，article，letter，ctexart，ctexbook，ctexreport等\}；\\
+	文档类型ctexar前的UTF-8用于声明中文所用的编码格式。\\
+	(2)引入宏包：\\
+	\textbackslash usepackage\{宏包:ctex，amsmath，graphicx等\}；\\
+	(3)设置标题、作者、日期等：\\
+	\textbackslash title/author/date\{标题、作者、日期\}。\\
+	标题的产生分为两步，首先在导言区声明，然后在正文区输出。\\
+	当文档类型选择cetxart，ctexbook，ctexreport时，不需要使用ctex宏包。
+	
+	\section{正文区}
+	(1)\textbackslash begin\{document\}（标识正文范围）;\\
+	(2)输出标题：\\
+	\textbackslash maketitle;\\
+	(3)输出目录：\\
+	\textbackslash tableofcontents;\\
+    (4)分章节写正文：\\
+    \textbackslash chapter/section/subsection/subsubsection\{章节标题\}；\\
+    (5)\textbackslash end\{document\}。
+          
+    \section{增加目录项目}
+    \textbackslash 使用tocbibind宏包：\\
+    \textbackslash usepackage[nottoc]\{tocbibind\}\\
+    默认在目录中加入目录项本身、参考文献、索引等。\\
+    
+    \chapter{字体属性}
+    
+    \section{字体族}
+    \textbackslash textrm(装饰)/sf(无装饰)/tt(等宽)\{文本\};\\
+    \{\textbackslash rm/sf/ttfamily 文本\}。
+    
+    \section{字体系列}
+    \textbackslash textmd/bf\{文本\};\\
+    \{\textbackslash md/bfseries 文本\}。
+    
+    \section{字体形状}
+    \textbackslash textup/it/sl/sc\{文本\};\\
+    \{\textbackslash up(直立)/it（斜体）/sl（伪斜体）/sc（小型大写）shape 文本\};\\
+    \{\textbackslash songti/heiti/kaishu/fangsong 文本\}。\\
+    
+    \section{字体大小}
+    \{tiny/scriptsize/footnotesize/small/normalsize/large/Large/LARGE/huge/Huge 文本\};\\
+    \textbackslash zihao\{字体大小\} 文本，中文字号可设置为-6，-5，$\ldots$,-0,0,$\ldots$,8。\\
+    
+    \section{自定义引用字体}
+    \textbackslash newenvironment\{myquote\}\\
+    \{\textbackslash begin\{quote\}字体族\textbackslash zihao\{字号\}\}\\
+    \{\textbackslash end\{quote\}\}\\
+    自定义命令环境中第一个参数是环境的名字，后两个参数是环境开始和结束的代码。
+    
+    \section{强调}
+    \textbackslash emph命令表示强调。
+    
+    \chapter{页面设置}
+    
+    \section{长度单位}
+    pt，pc(1pt=12pc),in(1in+72.27pt),bp,cm,mm,dd,cc,sp(最小长度单位)，em,ex。
+    
+    \section{缩进}
+    禁用缩进：在导言区使用\textbackslash noindent命令可取消首行缩进。但此时\textbackslash par后面的内容仍然默认缩进。如果想要禁止\textbackslash par后面自动缩进，可在导言区使用\textbackslash par\textbackslash noindent命令。\\
+    产生缩进：\textbackslash indient\\
+    缩进长度：\textbackslash parindient\\
+    悬挂缩进:\textbackslash hangafter、\textbackslash hangindient\\
+    首字下沉：使用lettrine宏包。\\
+    悬挂缩进：悬挂缩进只需要在需要设置缩进的段落上下使用\textbackslash hangafter=需要缩进的长度即可。\\
+    自定义缩进：如果想要自定义缩进长度，可在导言区使用\textbackslash setlength \textbackslash parindident\{需要所经的长度\}命令。\\
+    
+    \section{分段换行}
+    \textbackslash \textbackslash 用于换行;\\
+    \textbackslash par用于分段;\\
+    空行用于产生新的段落。
+           
+    \section{段落对齐}
+    \textbackslash raggedright\\
+    \textbackslash raggedleft\\
+    对齐环境：center，flushleft，flushright
+       
+    \section{清除空白页}
+    在某命令之后出现空白页，则在该命令之前添加该命令：\textbackslash let\textbackslash cleardoublepage\textbackslash clearpage。
+    
+    \section{页面尺寸}
+    使用geometry宏包：\\
+    \textbackslash usepackage\{geometry\}\\
+    \textbackslash geometry\{纸面大小（如a6paper），版心对齐方式（如centering），长宽占页面的比例（如scale=0.8）\}\\
+          
+    \section{脚注}
+    \textbackslash footnote命令。
+    
+    \section{空行}
+    空行前需要先换行。\\
+    \~ \thinspace \textbackslash \textbackslash\\
+    控制间距的空行：\textbackslash \textbackslash []
+    
+    \section{行距}
+    \textbackslash linespread\{实际行距为基本行距的倍数\}  
+        
+    \section{盒子}
+    盒子是TEX中的基本处理单位，一个字符、一行文字、一个页面、一张表格在TEX中都是一个盒子。\\
+    水平盒子：\\
+    \textbackslash mbox\\
+    \textbackslash makebox[宽度][位置，包括l,r,c,s等]{内容}\\
+    \textbackslash fbox:带边框的盒子\\
+    \textbackslash framebox[宽度][位置，包括l,r,c,s等]{内容}\\
+    调整边框线的粗细：\verb|\setlength{\fboxrule}{...}|\\  
+    内边距：\verb|\setlength{\fboxsep}{...}|\\
+    垂直盒子：\\
+    \verb|\parbox[<位置>][<高度>][<内容位置>]{<宽度>}{<内容>}|\\
+    \verb|\begin{minipage}[<位置>c（居中）、t（顶部）、b（底部）、s（分散）][<高度>][<内容位置>]{<宽度>}抄录内容\end{minipage}|\\
+        
+    \chapter{文本环境}
+    
+    \section{引用环境}
+    qoute，qoutation，verse环境。\\
+    使用quote环境，其中内容单独分行，增加缩进和上下间距排印，不改变字体。\\
+    基本的交叉引用命令是\textbackslash ref，以标签为参数，得到被引用的编号。\\
+    公式环境也可进行交叉引用，\textbackslash begin\{equation\}\textbackslash label\{标签名称\}\\
+    amsmath宏包中包括公式的引用命令\textbackslash eqref。
+    
+    \section{摘要环境}
+    abstract环境\\
+    在\textbackslash maketitle之后用abstract环境生成。\\
+    
+    \section{列表环境}
+    eumerate、itemize、description环境
+    
+    \section{定理环境}
+    \verb*|\newtheorem{环境名称}{定理名称}|\\
+    定理环境格式：\textbackslash theoremstyle\{plain、break、marginbreak、changebreak、change、margin\}
+    
+    \section{抄录环境}
+    \textbackslash verb命令、verbetim环境\\
+    alltt宏包可引入抄录环境。\\
+
+    \chapter{图表}
+    
+    \section{图像}
+    导言区引入graphicx宏包，并用graphicspath\{图像文件夹名称/\}设置好图像文件路径后，在figure浮动环境中，使用\textbackslash includegraphics[\textbackslash width=\textbackslash linewidth,\textbackslash angle=旋转角度,\textbackslash scale=缩放大小]\{图像文件名称\}插入图像。\\
+    插入的图形本质上就是一个矩形盒子。\\
+    通常把图形放在一个可以变换相对位置的环境中，这种环境称为浮动体。\\
+    
+    \section{表格}
+    在table浮动环境中，使用tabular\{格式\}环境生成表格，竖线由|产生，横线由\textbackslash hline产生。行与行用\textbackslash \textbackslash 分割，列与列用\&分割。\\
+    tabular环境之后有一个必选参数，里面声明了表格中列的格式。
+      
+    \section{标题}
+    \textbackslash caption\{图表名称\}设置图标标题。
+    
+    \section{标签引用}
+    \textbackslash lable\{标签名称\}打上标签；\\
+    \textbackslash ref\{标签名称\}引用。
+    
+    \section{浮动环境位置}
+    浮动环境可选参数：h当前位置，t页顶，b页底，p独占一页。
+    
+    \section{不浮动的图表环境}
+    [H]是由float宏包提供的特殊功能，表示就放在这里，不浮动，可置于\textbackslash begin\{浮动环境\}之后。、
+    
+    \section{改变图表标题格式}
+    使用caption宏包：\\
+    \textbackslash usepackage[标题对齐方式（如format=hang），字号（如font=small），标题文本类型（如textfont=it）]\{caption\}
+    
+    \chapter{符号}
+    
+    \section{空白符号}
+    \textbackslash quad（1em）、\textbackslash qquad（2em）、\textbackslash thinspace（1/6em）、\textbackslash ensapce(0.5em)。\\
+    不要使用中文的全角字符。\\
+    \LaTeX 会自动忽略每行开始的空格，通常汉字后面的空格会被忽略，英文和其他符号后面的空格会被保留。\\
+    注意用空格把命令和后面的中文隔开。\\
+    段首不被忽略的空白：使用\textbackslash hspace*\{距离\}命令。\\
+    通常汉字后面的空格会被忽略，其他符号后面的空格则被保留。\\
+    
+    \section{控制符}
+    \textbackslash \#、\textbackslash \$、\textbackslash \&、\textbackslash \%、\textbackslash \{、\textbackslash \}、\textbackslash \{\textbackslash\}、\textbackslash textbakslash。  
+    
+    \section{希腊字母}
+    \textbackslash alpha、\textbackslash beta、\textbackslash epsilon、\textbackslash pi、\textbackslash omega
+    、\textbackslash Gamma、\textbackslash Delta、\textbackslash Omega、\textbackslash Theta、\textbackslash Pi等。
+    
+    \section{标志符号}
+    \textbackslash Tex、\textbackslash LaTeX、\textbackslash LaTeXe。
+    
+    \section{连字符}
+    由一个、两个、三个连续的减号生成短、中、长三种连字符。
+    
+    \section{引号}
+    数字键1左边的撇号表示左单引号，单引号字符表示右单引号，连续两个撇号表示左双引号，连续两个单引号字符表示右双引号。
+    
+    \section{省略号}
+    \textbackslash cdots居中的省略号\\
+    \ldots/\dots:西文省略号由\textbackslash ldots、\textbackslash dots产生。
+    
+    \section{排版符号}
+    $\S$:\$\textbackslash S\$。
+    
+    \section{下划线}
+    \textbackslash underline命令\\
+    更多的下划线使用ulem宏包；\\
+    \uline{uline}\quad\uuline{uuline}\quad\uwave{uwave}\quad\sout{sout}\quad\xout{xout}\quad\dashuline{dashuline}\quad\dotuline{dotuline}\\
+    中文下划线需要使用CJKfntef宏包：\\
+    
+    \chapter{数学公式}
+    数学公式分为行内公式、行间公式和列表公式。\\
+    
+    \section{常用数学宏包}
+    \verb|\usepackage{amsmath, amssymb}  % standard packages for math writing,\usepackage{listings}   % include the contents of code files ,\usepackage{mathpazo} % a better font than the default,\usepackage{mathtools},\usepackage{enumitem},\usepackage{amsthm}|\\
+    
+    \section{行内公式}
+    (1)\$数学模式\$;\\
+    (2)\textbackslash(数学模式\textbackslash);\\
+    (3)math环境。
+    
+    \section{行间公式}
+    (1)\$\$数学模式\$\$;\\
+    (2)\textbackslash []\textbackslash;\\
+    (3)displaymath环境。
+    
+    \section{编号行间公式}
+    使用equation环境。
+    
+    \section{非编号行间公式}
+    使用equation*环境。
+    
+    \section{对齐公式}
+    \verb|当你的公式不止一行，为了让可读性增强减少阅读障碍，我们需要用到对齐和换行。在 LaTeX 中，& 是对齐，\\ 是换行。|\\
+    需要在align环境中使用。\\
+        
+    \section{上下标}
+    行内公式中上下标默认在右下角，行间公式中上下标默认在正下方。\\
+    上下标需要在数学模式中使用。\\
+    \textbackslash \_\{下标\}命令；\\
+    \textbackslash \^\quad\{上标\}命令。\\
+    行内模式显示为行间模式使用\textbackslash diaplaystyle命令。\\
+    上下标的叠加：使用\textbackslash atop命令，也可以使用\textbackslash substack\{下标\}叠加下标，各层之间使用\textbackslash \textbackslash 分割\\
+    limits要求前面的必须为数学符号，不然会报错，解决方法是在非数学符号前使用\textbackslash mathop命令。
+    
+    \section{根式}
+    \textbackslash sqrt\{\}。
+    
+    \section{分式}
+    \textbackslash frac\{\}\{\}前为分子，后为分母。
+    
+    \section{算符}
+    \verb|加减乘除 +、−、∗、/ 可直接输入,乘号 × \times,除号 ÷ \div,点乘 · \cdot,加减号 ± \pm / ∓ \mp|
+    \textbackslash log/sin/cos/tan/cot/arcsin/arccos/ln。
+    
+    \section{极限}
+    极限符号：\$\textbackslash lim\_\{\textbackslash to\}\$\\
+    无限：\textbackslash infty\\
+    将极限符号置于正下方：\textbackslash displaystyle（行内转换为行间格式）;\$\textbackslash lim\textbackslash limits\_\{\}\$。
+    
+    \section{角度}
+    $^\circ$:\$ \^ \enspace \textbackslash circ\$    
+    
+    \section{矩阵}
+    行与行之间用双斜杠\textbackslash \textbackslash 分割，列与列之间用\& 分割。\\
+    不带括号的矩阵使用matrix环境，带圆括号的矩阵使用pmatrix环境，方括号矩阵使用bmatrix环境，大括号矩阵使用Bmatrix环境，竖线矩阵使用vmatrix环境，双竖线矩阵使用Vmatrix环境。\\
+    还可以使用array环境，与tabular环境类似，必选参数表示列的对齐方式。
+    
+    \section{关系符}
+    \verb|=，>，<，直接输入,不等号≠ \ne,大于等于号 ≥ \ge,小于等于号 ≤ \le,约等号 ≈ \approx,等价 ≡ \equiv|\\
+    小于等于：\textbackslash leq\\
+    大于等于：\textbackslash geq\\
+    
+    \section{箭头}
+    \verb|常用的箭头包括→ (\rightarrow 或 \to）、← （\leftarrow 或 \gets）|\\
+    
+    \section{括号和定界符}
+    \verb|LaTeX 提供了多种括号和定界符表示公式块的边界，如小括号 ()、中括号 []、大括号 {} (\{\})、尖括号 ⟨⟩ (\langle \rangle)、上括号(\overbrace)、下括号(\underbrace)等。|\\
+    调整括号的大小：\verb|\bigl( \Bigl( \biggl( \Biggl( \quad \bigr\} \Bigr\} \biggr\} \Biggr\} \quad|\\
+    
+    \section{定理环境}
+    在使用前需要在导言区定义：\\
+    \textbackslash newtheorem\{thm\}\{定理\}\\
+    定理环境有一个可选参数，就是定理的名字。
+    
+    \section{自定义}
+    集合符号编写麻烦，可在导言区进行简化定义：\\
+    \verb|\def\ZZ{{\mathbb Z}},\def\RR{{\mathbb R}},\def\CC{{\mathbb C}},\def\QQ{{\mathbb Q}},\def\EE{{\mathbb E}}|\\
+    简化尖括号符号：\\
+    \verb|\newcommand{\la}{\langle},\newcommand{\ra}{\rangle}|\\
+
+    \section{证明环境}
+    在证明环境之后添加小正方形：\\
+    \verb|\newenvironment{proof}{\emph{Proof.}}{\hfill$\square$}|\\
+    
+    \section{引用}
+    数学公式的引用需要使用amsmath宏包中的eqref命令。\\
+    
+    \chapter{文献列表}
+    常用的文献管理软件是Zotera，为实现更好的功能需要安装Better BibTeX插件。\\ 
+    一次管理，一次使用：使用thebibliography环境和\textbackslash bibitem命令。\\
+    一次管理，多次使用：用bib文献库，\textbackslash cite命令引用。
+    用\textbackslash bibliographystyle命令声明参考文献的格式，用\textbackslash bibliography 打印参考文献列表。\\
+    每则文献包括类型、引用标签、标题、作者、出版社、出版年等。\\
+    使用文献管理工具JabRef制作参考文献数据库文件。\\
+    \BibTeX 处理文献文件运行四次，第一次准备辅助文件，第二次生成\LaTeX 代码，后两次读入文献列表代码并生成正确的信息。\\
+    \LaTeX 只选择被\textbackslash cite 引用的文献，并在引用位置显示在文献列表中的编号，如果要显示并不直接引用的文献，需要在\textbackslash bibliography之前使用\textbackslash nocite 命令。\\
+    BibTeX使用的参考文献数据库其实是一个后缀名为.bib的文件。\\
+    
+    \chapter{幻灯片}
+    
+    \section{简介}
+    Beamer是一个用于制作演示文稿的\LaTeX 文档类。\\
+    文档类型选择beamer，每张幻灯片都是放在一个frame环境中的。\\
+    在载入ctex宏包的时候加上noindient选项可以取消段落缩进。\\
+    每张幻灯片可以添加标题和副标题在必选参数中。\\
+    使用\textbackslash frametitle\{标题\}、\textbackslash framesubtitle\{副标题\}设置标题。\\
+    内容位置可以通过可选参数[t,c,b]设置。\\
+    
+    \section{目录小节}
+    使用\textbackslash titlepage生成标题页。\\
+    可选参数plain表示不显示外部元素。\\
+    可使用part，section，subsection等结构命令。\\
+    \textbackslash tableofcontents产生目录页面，可选参数hideallsubsections表示不显示小节标题。
+    
+    \section{环境}
+    
+    \subsection{区块环境}
+    block
+    
+    \subsection{提醒环境}
+    alertblock
+    
+    \subsection{例子环境}
+    exampleblock
+    
+    \subsection{证明环境}
+    proof\\
+    证明二字改变为中文，\textbackslash renewcommand\{proofname\}\{证明\}
+    
+    \subsection{分栏环境}
+    columns环境和column命令，分栏对齐在columns环境之后使用onlytextwidth选项。    
+    
+    \section{抄录环境}
+    使用verb抄录环境时，需要在frame环境之后加上fragile可选参数
+    
+    \section{创建覆盖}
+    \textbackslash pause/onslide等\\
+    半透明显示：\textbackslash setbeamercovered\{transparent/invisible/dynamic/highly dynamic\}
+    
+    \section{主题}
+    
+    \section{选用}
+    使用\textbackslash suetheme\{主题名\}选择整体主题；使用\textbackslash usebeamerouter/inner/color/fonttheme选择细分主题。
+    
+    \section{定制}
+    
+    三种标准文类的章节命令与层次深度\\
+
+\end{document}
